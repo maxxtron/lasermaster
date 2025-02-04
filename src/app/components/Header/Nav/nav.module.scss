@@ -15,6 +15,7 @@
     list-style: none;
     font-weight: 400;
     align-items: center;
+    justify-content: space-between;
 }
 
 .info {
@@ -71,9 +72,9 @@
     margin-right: 32px;
     color: #e7e7e7;
     transition: 0.2s ease;
-    // &:last-child {
-    //     margin-right: 0px;
-    // }
+    &:last-child {
+        margin-right: 0px;
+    }
     &:hover {
         color: #fff;
     }
