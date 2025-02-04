@@ -1,5 +1,8 @@
+@import url("https://cdn.jsdelivr.net/gh/poposnail61/min-sans@main/web/css/minsans-dynamic-subset.css");
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'min-sans', sans-serif;
 }
