@@ -53,7 +53,7 @@ const Nav = () => {
                 <li className={s.info}>Пн-Пт: 09:00–18:00</li>
                 <li className={s.phone}>
                     <Link href='tel:++380978542401' className={s.link_phone}>
-                        <Image src='/icons/phone.png' alt='Телефон' width={24} height={24} className={s.icon_phone}/>
+                        <Image src='/icons/phone.svg' alt='Телефон' width={16} height={16} className={s.icon_phone}/>
                         <span>+380 97 854 24 01</span>
                     </Link>
                 </li>
