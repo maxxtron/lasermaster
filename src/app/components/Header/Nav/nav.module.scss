@@ -60,21 +60,21 @@
     padding: 14px 0 26px 0;
     list-style: none;
     text-decoration: none;
+    justify-content: space-between; 
 }
 
 .nav_items {
     display: flex;
-    justify-content: space-between;
 }
 
 .nav_item {
     text-decoration: none;
-    margin-right: 32px;
+    // margin-right: 32px;
     color: #e7e7e7;
     transition: 0.2s ease;
-    &:last-child {
-        margin-right: 0px;
-    }
+    // &:last-child {
+    //     margin-right: 0px;
+    // }
     &:hover {
         color: #e8af1d;
     }
