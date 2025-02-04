@@ -24,10 +24,17 @@
 
 .phone {
     margin-left: 46px;
+    
     span {
         margin-left: 4px;
         color: #f3f3f3;
         font-weight: 700;
+        transition: 0.2s ease;
+    }
+    &:hover {
+        span {
+            color: #e8af1d;
+        }
     }
 }
 
@@ -39,4 +46,7 @@
 
 .telegram {
     margin-left: 46px;
+    &:hover {
+        scale: 1.1;
+    }
 }
