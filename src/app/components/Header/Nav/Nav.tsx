@@ -2,6 +2,48 @@ import Link from 'next/link'
 import s from './nav.module.scss'
 import Image from "next/image"
 
+interface INav {
+  id: number;
+  name: string;
+  link: string;
+}
+
+const link: INav[] = [{
+  id: 1,
+  name: 'Наші роботи',
+  link: '#',
+},
+{
+  id: 2,
+  name: 'Обладнання',
+  link: '#',
+},
+{
+  id: 3,
+  name: 'Прайс',
+  link: '#',
+},
+{
+  id: 4,
+  name: 'Прайс',
+  link: '#',
+},
+{
+  id: 5,
+  name: 'Схема роботи',
+  link: '#',
+},
+{
+  id: 6,
+  name: 'Часті питання',
+  link: '#',
+},
+{
+  id: 7,
+  name: 'Де знаходимось ',
+  link: '#',
+}
+]
 const Nav = () => {
   return (
     <nav className={s.container}>
@@ -21,6 +63,15 @@ const Nav = () => {
                     </Link>
                 </li>
             </ul>
+      </div>
+      <div className={s.down_level}>
+        <ul className={s.nav_list}>
+            {link.map((item) => (
+                <li key={item.id}>
+                    <Link href={item.link} className={s.nav_item}>{item.name}</Link>
+                </li>
+            ))}
+        </ul>
       </div>
     </nav>
   )

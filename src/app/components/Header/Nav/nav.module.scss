@@ -1,5 +1,7 @@
 .container {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .up_level {
@@ -49,5 +51,30 @@
     transition: 0.2s ease;
     &:hover {
         scale: 1.1;
+    }
+}
+
+.nav_list {
+    display: flex;
+    padding: 14px 0 26px 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav_items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_item {
+    text-decoration: none;
+    margin-right: 32px;
+    color: #e7e7e7;
+    transition: 0.2s ease;
+    // &:last-child {
+    //     margin-right: 0px;
+    // }
+    &:hover {
+        color: #fff;
     }
 }
