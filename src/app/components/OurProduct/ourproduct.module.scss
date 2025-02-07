@@ -56,14 +56,20 @@
     list-style: none;
     display: flex;
     margin-top: 32px;
+    max-width: 552px;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 .material {
     display: flex;
     margin-left: 16px;
-    display: flex;
     align-items: center;
+    margin-bottom:20px;
     &:first-child {
+        margin-left: 0;
+    }
+    &:nth-child(3) {
         margin-left: 0;
     }
 }
