@@ -8,16 +8,15 @@
 }
 .image_container {
     display: flex;
-//   position: relative;
-  width: 100%; /* Ширина контейнера */
-  height: 1024px; /* Высота контейнера */
+  width: 100%;
+  height: 1024px;
   background: url('../../../../public/img/product_photo1.jpg') no-repeat center / cover; /* Картинка */
   background-position: center calc(-120px);
 }
 .image_blur {
   max-width: 1074px;
-  width: 100%; /* Ширина контейнера */
-  height: 1024px; /* Высота контейнера */
+  width: 100%;
+  height: 1024px;
   background: url('../../../../public/img/blur_back.jpg');
   margin-top: -121px;
   display: flex;
@@ -26,6 +25,7 @@
 
 .info_container {
     margin-top: 258px;
+    padding: 0 15px;
 }
 
 .title_2 {

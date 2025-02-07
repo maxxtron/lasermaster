@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import s from './nav.module.scss'
 import Image from "next/image"
+import { useState } from 'react';
 
 interface INav {
   id: number;
@@ -45,6 +46,9 @@ const link: INav[] = [{
 }
 ]
 const Nav = () => {
+
+  const [activeLink, setActiveLink] = useState<number>(0)
+
   return (
     <nav className={s.container}>
       <div className={s.up_level}>
@@ -68,7 +72,8 @@ const Nav = () => {
         <ul className={s.nav_list}>
             {link.map((item) => (
                 <li key={item.id}>
-                    <Link href={item.link} className={s.nav_item}>{item.name}</Link>
+            
+                  <Link href={item.link} className={activeLink === item.id ? s.nav_item_active : s.nav_item} onClick={() => setActiveLink(item.id)}>{item.name}</Link>
                 </li>
             ))}
         </ul>
