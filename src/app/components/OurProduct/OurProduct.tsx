@@ -2,6 +2,9 @@ import Link from 'next/link';
 import Button from '../resuable/Button';
 import s from './ourproduct.module.scss'
 import Image from "next/image"
+import Popup from '../resuable/Popup';
+import { useState } from 'react';
+import PopupCall from './PopupCall';
 interface IMaterials {
   id: number;
   icon: string;
@@ -38,6 +41,9 @@ const materials:IMaterials[] = [{
 
 
 const OurProduct = () => {
+
+  const [isOpen, setIsOpen] = useState<boolean>(false)
+
   return (
     <section className={s.main}>
       <div className={s.image_container}>
@@ -68,11 +74,14 @@ const OurProduct = () => {
                 <Link href='https://telegram.me/ra_alex_888' className={s.button_link} target='_blank'>
                   <Button value='Написати в Telegram' className={s.btn_telegram}/>
                 </Link>
-                <Button value='Замовити дзвінок' onClick={() => console.log('popup')} className={s.btn_call}/>
+                <Button value='Замовити дзвінок' onClick={() => setIsOpen((prev) => !prev)} className={s.btn_call}/>
         </div>
           </div>
         </div>
       </div>
+            <Popup isOpen={isOpen} onClose={() => setIsOpen(false)}>
+              <PopupCall onClose={() => setIsOpen(false)}/>
+            </Popup>
     </section>
   )
 }

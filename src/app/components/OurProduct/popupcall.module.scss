@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.title {
+font-weight: 600;
+font-size: 32px;
+line-height: 40px; 
+line-height: 1.25;
+text-align: center;
+color: #292929;
+}
+
+.subtitle {
+font-weight: 400;
+font-size: 14px;
+line-height: 24px; 
+line-height: 1.7;
+text-align: center;
+color: #292929;
+margin-top: 16px;
+}

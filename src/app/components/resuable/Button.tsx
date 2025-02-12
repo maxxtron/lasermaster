@@ -3,7 +3,7 @@ import s from './button.module.scss'
 
 interface IButton {
     value: string;
-    onClick?: () => void;
+    onClick?: () => void | boolean | undefined;
     className: string;
 }
 
