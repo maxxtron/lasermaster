@@ -22,7 +22,7 @@ const Popup: React.FC<IPopup> = ({ isOpen, onClose, children }) => {
     <div className={s.overlay} onClick={onClose}>
       <div className={s.popup} onClick={(e) => e.stopPropagation()}>
         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" className={s.close} onClick={onClose}>
-            <path d="M1 17L17 1M1 1L17 17" stroke="#585858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M1 17L17 1M1 1L17 17" stroke="#585858" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
         {children}
       </div>

@@ -23,3 +23,41 @@ text-align: center;
 color: #292929;
 margin-top: 16px;
 }
+
+.phone_container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+}
+
+.phone_text {
+font-weight: 400;
+font-size: 14px;
+line-height: 24px; 
+line-height: 1.7;
+color: #404040;
+}
+
+.phone_number {
+    margin-top: 8px;
+}
+
+.phone_btn_active {
+    max-width: 456px;
+    width: 100%;
+    transition: 0.1s ease-in;
+    margin-top: 24px;
+    box-shadow: 0 1px 4px 0 rgba(12, 12, 13, 0.05), 0 1px 4px 0 rgba(12, 12, 13, 0.1);
+    background: #ff5821;
+        &:hover {
+        background: #f13d0f;
+    }
+}
+
+.phone_btn_disabled {
+    max-width: 456px;
+    width: 100%;
+    transition: 0.1s ease-in;
+    margin-top: 24px;
+    background-color: #B8B8B8
+}
