@@ -1,3 +1,5 @@
+import Link from 'next/link';
+import Button from '../resuable/Button';
 import s from './ourproduct.module.scss'
 import Image from "next/image"
 interface IMaterials {
@@ -36,7 +38,6 @@ const materials:IMaterials[] = [{
 
 
 const OurProduct = () => {
-
   return (
     <section className={s.main}>
       <div className={s.image_container}>
@@ -59,15 +60,19 @@ const OurProduct = () => {
               {materials.map((material =>(
                   <li key={material.id} className={s.material}>
                     <Image src ={material.icon} className={s.material_img} width={24} height={24} alt={material.name}/>
-                    
                     <p className={s.material_text}>{material.name}</p>
                   </li>
                 )))}
             </ul>
+            <div className={s.button_container}>
+                <Link href='https://telegram.me/ra_alex_888' className={s.button_link} target='_blank'>
+                  <Button value='Написати в Telegram' className={s.btn_telegram}/>
+                </Link>
+                <Button value='Замовити дзвінок' onClick={() => console.log('popup')} className={s.btn_call}/>
+        </div>
           </div>
         </div>
       </div>
-        
     </section>
   )
 }

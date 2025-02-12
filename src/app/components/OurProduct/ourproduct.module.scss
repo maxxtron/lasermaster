@@ -84,3 +84,30 @@
     font-weight: 600;
     color: #f3f3f3;
 }
+.button_container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 446px;
+    width: 100%;
+    margin-top: 60px;
+    
+}
+
+.button_link {
+    text-decoration: none;;
+}
+
+.btn_telegram {
+    background-color: #5FABE1;
+    transition: 0.2s ease-in;
+    &:hover {
+        background-color: #2e8fd4;
+    }
+}
+.btn_call {
+    background-color: #66C44E;
+    transition: 0.2s ease-in;
+    &:hover {
+        background-color: #31ac35;
+    }
+}
