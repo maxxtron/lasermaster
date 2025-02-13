@@ -11,19 +11,15 @@ interface IClose {
 const PopupCall = ({ onClose }: IClose) => {
   const [number, setNumber] = useState<string>('+380');
   const [isDisabled, setDisabled] = useState<boolean>(false);
-  const [error, setError] = useState<boolean>(false);
-
-  const handlePhone = (e:React.InputEvent<HTMLFormElement>) => {
-    setNumber(e.target.value.replace(/[^+\d]/g, ''))
-    setError(false)
-  } 
+  const [isChecked, setIsChecked] = useState<boolean>(false);
+  console.log(isChecked)
 
     useEffect(() => {
-        if(number.length !== 13){
+        if(number.length !== 13 || isChecked === false) {
             setDisabled(true);
         } else {
             setDisabled(false);
-        }}, [number])
+        }}, [number, isChecked])
   // Асинхронная функция для отправки данных
   const sendPhone = async (phone: string) => {
     try {
@@ -73,18 +69,14 @@ const PopupCall = ({ onClose }: IClose) => {
           <span className={s.phone_text}>Телефон</span>
           <Input
             value={number}
-<<<<<<< HEAD
-            onChange={(e) => handlePhone(e)}
-=======
             onChange={(e) => {setNumber(handleOnChange(e.target.value))}}
->>>>>>> 09a9d45d607142bbaad343e14eb8d62c92f7b8b9
             placeholder='+000000000'
             className={s.phone_number}
             maxLength={13}
           />
         </div>
         <div className={s.checked_container}>
-          <Input type='checkbox' id='terms' className={s.terms_checkbox} required />
+          <Input type='checkbox' id='terms' className={s.terms_checkbox} required onChange={() => setIsChecked(!isChecked)}/>
           <label htmlFor='terms' className={s.terms_label}>Я погоджуюся з <Link href={'#'} className={s.checkbox_link}>Політикою конфіденційності</Link></label>
         </div>
         <Button
