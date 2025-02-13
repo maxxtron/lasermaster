@@ -12,7 +12,6 @@ const PopupCall = ({ onClose }: IClose) => {
   const [number, setNumber] = useState<string>('+380');
   const [isDisabled, setDisabled] = useState<boolean>(false);
   const [isChecked, setIsChecked] = useState<boolean>(false);
-  console.log(isChecked)
 
     useEffect(() => {
         if(number.length !== 13 || isChecked === false) {
