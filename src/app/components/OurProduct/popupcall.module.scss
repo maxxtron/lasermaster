@@ -30,6 +30,35 @@ margin-top: 16px;
     margin-top: 24px;
 }
 
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.checked_container{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 24px;
+}
+.terms_checkbox {
+    border-radius: 2px;
+    width: 18px!important;
+    height: 18px!important;
+    accent-color: #ff5821;
+    cursor: pointer;
+}
+
+.terms_label {
+    font-size: 14px;
+    margin-left: 8px;
+}
+
+.checkbox_link {
+    color: #ff5821;
+    text-decoration: none;
+}
+
 .phone_text {
 font-weight: 400;
 font-size: 14px;
@@ -60,4 +89,8 @@ color: #404040;
     transition: 0.1s ease-in;
     margin-top: 24px;
     background-color: #B8B8B8
+}
+
+.checked_container {
+    display: flex;
 }

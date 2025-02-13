@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import s from './popupcall.module.scss';
 import Input from '../resuable/Input';
 import Button from '../resuable/Button';
+import Link from 'next/link';
 
 interface IClose {
   onClose: () => void;
@@ -45,36 +46,52 @@ const PopupCall = ({ onClose }: IClose) => {
     }
   };
 
+  const handleOnChange = (input: string): string => {
+  // Если введённый текст не начинается с "+380", исправляем его
+  // Если пользователь пытается удалить все, возвращаем просто "+380"
+  if (!input.startsWith('+380')) {
+    return '+380';
+  }
+  // Оставляем только цифры после "+380"
+  const digits = input.substring(4).replace(/\D/g, '');
+  // Ограничиваем ввод до 9 цифр после "+380"
+  return '+380' + digits.substring(0, 9);
+}
   // Обработчик отправки формы
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault(); // предотвращаем стандартное поведение формы
-    await sendPhone(number); // отправляем номер
-    onClose(); // закрываем попап после отправки
+    e.preventDefault();
+    await sendPhone(number);
+    onClose();
   };
 
   return (
     <div className={s.container}>
       <h2 className={s.title}>Замовлення дзвінка</h2>
       <span className={s.subtitle}>Надішліть форму і ми вам передзвонимо</span>
-
-      {/* Оборачиваем Input и Button в форму */}
       <form onSubmit={handleSubmit} className={s.form}>
         <div className={s.phone_container}>
           <span className={s.phone_text}>Телефон</span>
           <Input
             value={number}
+<<<<<<< HEAD
             onChange={(e) => handlePhone(e)}
+=======
+            onChange={(e) => {setNumber(handleOnChange(e.target.value))}}
+>>>>>>> 09a9d45d607142bbaad343e14eb8d62c92f7b8b9
             placeholder='+000000000'
             className={s.phone_number}
             maxLength={13}
           />
         </div>
-        {/* Кнопка для отправки формы */}
+        <div className={s.checked_container}>
+          <Input type='checkbox' id='terms' className={s.terms_checkbox} required />
+          <label htmlFor='terms' className={s.terms_label}>Я погоджуюся з <Link href={'#'} className={s.checkbox_link}>Політикою конфіденційності</Link></label>
+        </div>
         <Button
           value='Надіслати'
           className={isDisabled ? s.phone_btn_disabled : s.phone_btn_active}
           disabled={isDisabled}
-          type='submit' // указываем type submit для кнопки
+          type='submit'
         />
       </form>
     </div>
