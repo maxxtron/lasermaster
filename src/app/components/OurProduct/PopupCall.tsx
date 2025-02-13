@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import s from './popupcall.module.scss';
 import Input from '../resuable/Input';
 import Button from '../resuable/Button';
+import Link from 'next/link';
 
 interface IClose {
   onClose: () => void;
@@ -72,7 +73,10 @@ const PopupCall = ({ onClose }: IClose) => {
             maxLength={13}
           />
         </div>
-        <div className={s.checked_container}></div>
+        <div className={s.checked_container}>
+          <Input type='checkbox' id='terms' className={s.terms_checkbox} required />
+          <label htmlFor='terms' className={s.terms_label}>Я погоджуюся з <Link href={'#'} className={s.checkbox_link}>Політикою конфіденційності</Link></label>
+        </div>
         <Button
           value='Надіслати'
           className={isDisabled ? s.phone_btn_disabled : s.phone_btn_active}

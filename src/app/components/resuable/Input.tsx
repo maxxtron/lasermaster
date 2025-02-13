@@ -1,16 +1,19 @@
 import s from './input.module.scss'
 
 interface IInput {
-    value: string;
+    id?: string | number;
+    value?: string;
     placeholder?: string;
-    onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+    type?: string;
+    required?: boolean;
+    onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
     className?: string;
     maxLength?: number;
 }
 
-const Input: React.FC<IInput> = ({value, placeholder, onChange, className, maxLength}) => {
+const Input: React.FC<IInput> = ({value, placeholder, onChange, className, maxLength, type}) => {
   return (
-    <input value={value} placeholder={placeholder} onChange={onChange} className={`${s.input} ${className}`} maxLength={maxLength}/>
+    <input type={type} value={value} placeholder={placeholder} onChange={onChange} className={`${s.input} ${className}`} maxLength={maxLength}/>
   )
 }
 
