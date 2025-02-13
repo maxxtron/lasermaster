@@ -39,6 +39,19 @@ const PopupCall = ({ onClose }: IClose) => {
     }
   };
 
+  const handleOnChange = (input: string): string => {
+  // Если введённый текст не начинается с "+380", исправляем его
+   // Если пользователь пытается удалить все, возвращаем просто "+380"
+  if (!input.startsWith('+380')) {
+    return '+380';
+  }
+
+  // Оставляем только цифры после "+380"
+  const digits = input.substring(4).replace(/\D/g, '');
+
+  // Ограничиваем ввод до 9 цифр после "+380"
+  return '+380' + digits.substring(0, 9);
+}
   // Обработчик отправки формы
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); // предотвращаем стандартное поведение формы
@@ -57,7 +70,7 @@ const PopupCall = ({ onClose }: IClose) => {
           <span className={s.phone_text}>Телефон</span>
           <Input
             value={number}
-            onChange={(e) => setNumber(e.target.value.replace(/[^+\d]/g, ''))}
+            onChange={(e) => {setNumber(handleOnChange(e.target.value))}}
             placeholder='+000000000'
             className={s.phone_number}
             maxLength={13}
