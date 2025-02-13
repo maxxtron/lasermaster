@@ -10,6 +10,12 @@ interface IClose {
 const PopupCall = ({ onClose }: IClose) => {
   const [number, setNumber] = useState<string>('+380');
   const [isDisabled, setDisabled] = useState<boolean>(false);
+  const [error, setError] = useState<boolean>(false);
+
+  const handlePhone = (e:React.InputEvent<HTMLFormElement>) => {
+    setNumber(e.target.value.replace(/[^+\d]/g, ''))
+    setError(false)
+  } 
 
     useEffect(() => {
         if(number.length !== 13){
@@ -57,7 +63,7 @@ const PopupCall = ({ onClose }: IClose) => {
           <span className={s.phone_text}>Телефон</span>
           <Input
             value={number}
-            onChange={(e) => setNumber(e.target.value.replace(/[^+\d]/g, ''))}
+            onChange={(e) => handlePhone(e)}
             placeholder='+000000000'
             className={s.phone_number}
             maxLength={13}
