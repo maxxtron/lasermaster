@@ -72,6 +72,7 @@ const PopupCall = ({ onClose }: IClose) => {
             maxLength={13}
           />
         </div>
+        <div className={s.checked_container}></div>
         <Button
           value='Надіслати'
           className={isDisabled ? s.phone_btn_disabled : s.phone_btn_active}
