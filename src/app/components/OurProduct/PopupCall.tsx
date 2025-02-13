@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import s from './popupcall.module.scss';
-import Input from '../resuable/Input';
-import Button from '../resuable/Button';
+import Input from '../resuable/inputs/Input';
+import Button from '../resuable/buttons/Button';
 import Link from 'next/link';
 
 interface IClose {

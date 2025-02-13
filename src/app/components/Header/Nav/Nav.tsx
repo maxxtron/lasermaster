@@ -63,7 +63,7 @@ const Nav = () => {
                 </li>
                 <li className={s.telegram}>
                     <Link href='https://telegram.me/ra_alex_888'>
-                        <Image src='/icons/telegram.png' alt='Телеграм' width={40} height={40} />
+                        <Image src='/icons/telegram.png' alt='Телеграм' width={25} height={25} />
                     </Link>
                 </li>
             </ul>

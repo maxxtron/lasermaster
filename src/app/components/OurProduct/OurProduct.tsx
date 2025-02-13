@@ -1,8 +1,8 @@
 import Link from 'next/link';
-import Button from '../resuable/Button';
+import Button from '../resuable/buttons/Button';
 import s from './ourproduct.module.scss'
 import Image from "next/image"
-import Popup from '../resuable/Popup';
+import Popup from '../resuable/buttons/popup/Popup';
 import { useState } from 'react';
 import PopupCall from './PopupCall';
 interface IMaterials {
