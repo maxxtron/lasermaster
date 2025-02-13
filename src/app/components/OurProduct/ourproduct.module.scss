@@ -7,25 +7,32 @@
   margin-top: 85px;
 }
 .image_container {
-    display: flex;
-  width: 100%;
-  height: 1024px;
-  background: url('../../../../public/img/background_main.jpg') no-repeat center / cover; /* Картинка */
-  background-position: center calc(-120px);
-}
-.image_blur {
-  max-width: 1074px;
-  width: 100%;
-  height: 1024px;
-//   background: url('../../../../public/img/blur_back.jpg');
-  margin-top: -121px;
   display: flex;
-  justify-content: center;
+  width: 100%;
+  height: 1024px;
+  background: url('../../../../public/img/background_main.jpg') no-repeat center / cover; 
+  position: relative;
 }
 
 .info_container {
-    margin-top: 258px;
-    padding: 0 15px;
+  position: absolute;
+  inset: 0; // Подстроит контейнер под родителя
+  padding: 0 15px;
+  max-width: 1074px;
+  left: 30%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  width: 100%;
+}
+
+@media screen and (max-width: 1800px) {
+  .info_container {
+    max-width: 80%;
+  }
 }
 
 .title_2 {
@@ -111,3 +118,15 @@
         background-color: #31ac35;
     }
 }
+
+@media screen and (min-width: 1920px){
+    .image_container{
+         background: url('../../../../public/img/background_main.jpg') no-repeat center / cover; 
+    }
+}
+
+// @media screen and (max-width: 1800px){
+//     .info_container{
+//          background: url('../../../../public/img/background_main.jpg') no-repeat center / cover; 
+//     }
+// }
