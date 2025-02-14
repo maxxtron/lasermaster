@@ -58,7 +58,7 @@ const OurProduct = () => {
         {/* <div className={s.image_blur}> */}
           <div className={s.info_container}>
             <div className={s.title_2}>
-              <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" className={s.icon_product}>
                 <path d="M28 37.3333C14.56 37.3333 12.18 23.94 11.76 13.314C11.641 10.36 11.5827 8.88067 12.6933 7.51567C13.8017 6.14833 15.1293 5.92433 17.787 5.47633C21.163 4.92332 24.5791 4.6525 28 4.66667C32.1627 4.66667 35.5903 5.033 38.213 5.47633C40.8707 5.92433 42.1983 6.14833 43.309 7.51567C44.4197 8.883 44.359 10.36 44.2423 13.314C43.8223 23.94 41.4423 37.3333 28.0023 37.3333H28Z" stroke="#E8AF1D" strokeWidth="2" />
                 <path d="M28 37.3334V44.3334" stroke="#E8AF1D" strokeWidth="2" strokeLinecap="round" />
                 <path d="M36.1667 51.3333H19.8333L20.6267 47.376C20.7324 46.8472 21.0179 46.3714 21.4348 46.0294C21.8517 45.6874 22.3741 45.5003 22.9133 45.5H33.0867C33.6259 45.5003 34.1484 45.6874 34.5652 46.0294C34.9821 46.3714 35.2677 46.8472 35.3733 47.376L36.1667 51.3333Z" stroke="#E8AF1D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -86,7 +86,7 @@ const OurProduct = () => {
         </div>
           </div>
           <div className={s.contact_container}>
-            <h2>Контакти</h2>
+            {/* <h2>Контакти</h2> */}
            </div>
       </div>
             <Popup isOpen={isOpen} onClose={() => setIsOpen(false)}>
