@@ -85,7 +85,9 @@ const OurProduct = () => {
                 <Button value='Замовити дзвінок' onClick={() => setIsOpen((prev) => !prev)} className={s.btn_call}/>
         </div>
           </div>
-        {/* </div> */}
+          <div className={s.contact_container}>
+            <h2>Контакти</h2>
+           </div>
       </div>
             <Popup isOpen={isOpen} onClose={() => setIsOpen(false)}>
               <PopupCall onClose={() => setIsOpen(false)}/>      
