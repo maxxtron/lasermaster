@@ -47,15 +47,6 @@ const OurProduct = () => {
   return (
     <section className={s.main}>
       <div className={s.image_container}>
-        {/* <Image
-        src='/img/background_main.jpg'
-        alt="Background"
-        layout="fill" // Растягивает изображение на весь блок
-        objectFit="cover" // Сохраняет пропорции и заполняет контейнер
-        quality={100}
-        priority
-      /> */}
-        {/* <div className={s.image_blur}> */}
           <div className={s.info_container}>
             <div className={s.title_2}>
               <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" className={s.icon_product}>

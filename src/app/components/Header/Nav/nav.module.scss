@@ -122,3 +122,30 @@ position: relative;
         }
     }
 }
+
+ @media (max-width: 401px) {
+    .info {
+        display: none;
+    }
+    .nav_item {
+        display: none;
+    }
+    .telegram {
+        display: none;
+    }
+    .up_level {
+        border: none;
+    }
+    .container {
+        flex-direction: row;
+    }
+    .phone {
+        margin-left: 28px
+        span {
+        margin-left: .25rem;
+    }
+    .up_level {
+        padding: 0;
+    }
+    }
+}
