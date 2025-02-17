@@ -21,7 +21,7 @@ const links: INav[] = [
 
 const BurgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState<number>(0);
+  const [ , setActiveLink] = useState<number>(0);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
