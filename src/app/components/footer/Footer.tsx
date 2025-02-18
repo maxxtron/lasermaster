@@ -3,7 +3,7 @@ import s from './footer.module.scss'
 const Footer = () => {
   return (
     <footer className={s.container}>
-      <span>Copyright  2025 Lasermaster</span>
+      <span>© Усі права захищені Lasermaster 2025</span>
     </footer>
   )
 }
