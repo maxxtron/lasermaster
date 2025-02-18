@@ -1,6 +1,9 @@
 .burgerMenu {
     position: relative;
-    @media (min-width: 401px) {
+    @media (max-width: 800px) {
+        display: block;
+    }
+    @media (min-width: 801px) {
         display: none;
     }
 }
