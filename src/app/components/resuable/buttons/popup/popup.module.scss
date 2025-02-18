@@ -10,21 +10,23 @@
 }
 
 .popup {
-display: flex;
-align-items: center;
-justify-content: flex-start;
-flex-direction: column;
-border-radius: 8px;
-padding: 64px 48px;
-width: 552px;
-box-shadow: 0 1px 4px 0 rgba(12, 12, 13, 0.05), 0 1px 24px 0 rgba(12, 12, 13, 0.1);
-background: #fdfdfd;
-position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 64px 48px;
+  width: 552px;
+  box-shadow:
+    0 1px 4px 0 rgba(12, 12, 13, 0.05),
+    0 1px 24px 0 rgba(12, 12, 13, 0.1);
+  background: #fdfdfd;
+  position: relative;
 }
 
 .close {
-    position: absolute;
-    cursor: pointer;
-    top: 30px;
-    right: 32px;
+  position: absolute;
+  cursor: pointer;
+  top: 30px;
+  right: 32px;
 }

@@ -13,12 +13,13 @@ const PopupCall = ({ onClose }: IClose) => {
   const [isDisabled, setDisabled] = useState<boolean>(false);
   const [isChecked, setIsChecked] = useState<boolean>(false);
 
-    useEffect(() => {
-        if(number.length !== 13 || isChecked === false) {
-            setDisabled(true);
-        } else {
-            setDisabled(false);
-        }}, [number, isChecked])
+  useEffect(() => {
+    if (number.length !== 13 || isChecked === false) {
+      setDisabled(true);
+    } else {
+      setDisabled(false);
+    }
+  }, [number, isChecked]);
   // Асинхронная функция для отправки данных
   const sendPhone = async (phone: string) => {
     try {
@@ -42,16 +43,16 @@ const PopupCall = ({ onClose }: IClose) => {
   };
 
   const handleOnChange = (input: string): string => {
-  // Если введённый текст не начинается с "+380", исправляем его
-  // Если пользователь пытается удалить все, возвращаем просто "+380"
-  if (!input.startsWith('+380')) {
-    return '+380';
-  }
-  // Оставляем только цифры после "+380"
-  const digits = input.substring(4).replace(/\D/g, '');
-  // Ограничиваем ввод до 9 цифр после "+380"
-  return '+380' + digits.substring(0, 9);
-}
+    // Если введённый текст не начинается с "+380", исправляем его
+    // Если пользователь пытается удалить все, возвращаем просто "+380"
+    if (!input.startsWith('+380')) {
+      return '+380';
+    }
+    // Оставляем только цифры после "+380"
+    const digits = input.substring(4).replace(/\D/g, '');
+    // Ограничиваем ввод до 9 цифр после "+380"
+    return '+380' + digits.substring(0, 9);
+  };
   // Обработчик отправки формы
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -68,21 +69,34 @@ const PopupCall = ({ onClose }: IClose) => {
           <span className={s.phone_text}>Телефон</span>
           <Input
             value={number}
-            onChange={(e) => {setNumber(handleOnChange(e.target.value))}}
-            placeholder='+000000000'
+            onChange={(e) => {
+              setNumber(handleOnChange(e.target.value));
+            }}
+            placeholder="+000000000"
             className={s.phone_number}
             maxLength={13}
           />
         </div>
         <div className={s.checked_container}>
-          <Input type='checkbox' id='terms' className={s.terms_checkbox} required onChange={() => setIsChecked(!isChecked)}/>
-          <label htmlFor='terms' className={s.terms_label}>Я погоджуюся з <Link href={'#'} className={s.checkbox_link}>Політикою конфіденційності</Link></label>
+          <Input
+            type="checkbox"
+            id="terms"
+            className={s.terms_checkbox}
+            required
+            onChange={() => setIsChecked(!isChecked)}
+          />
+          <label htmlFor="terms" className={s.terms_label}>
+            Я погоджуюся з{' '}
+            <Link href={'#'} className={s.checkbox_link}>
+              Політикою конфіденційності
+            </Link>
+          </label>
         </div>
         <Button
-          value='Надіслати'
+          value="Надіслати"
           className={isDisabled ? s.phone_btn_disabled : s.phone_btn_active}
           disabled={isDisabled}
-          type='submit'
+          type="submit"
         />
       </form>
     </div>
