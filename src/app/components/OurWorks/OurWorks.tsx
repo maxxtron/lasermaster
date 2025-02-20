@@ -58,7 +58,7 @@ const ourWorksMetal: IOurWorks[] = [
 
 const OurWorks = () => {
   return (
-    <section className={s.container}>
+    <section className={s.container} id="ourworks">
       <h3 className={s.ourworks_title}>Наші роботи</h3>
       <h2 className={s.projects_title}>
         Проєкти від Lasermaster:

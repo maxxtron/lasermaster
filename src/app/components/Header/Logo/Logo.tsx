@@ -1,11 +1,11 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import s from './logo.module.scss';
+import Link from 'next/link';
 
 const Logo = () => {
   return (
     <div>
-      <Link href={'/'}>
+      <Link href="/" passHref>
         <Image src="/img/logo.png" alt="Laser Master" width={168} height={54} className={s.logo} />
         <Image
           src="/img/logo_small.png"
