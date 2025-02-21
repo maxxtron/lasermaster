@@ -348,4 +348,18 @@
   .btn_telegram {
     width: 100%;
   }
+  .main {
+    margin-top: 80px;
+  }
+  .info_container {
+    top: 50%;
+  }
+  .image_container {
+    min-height: 900px;
+  }
+}
+@media (max-width: 500px) {
+  .main {
+    margin-top: 69px;
+  }
 }
