@@ -67,6 +67,18 @@ const Nav = () => {
               <span>+380 97 854 24 01</span>
             </Link>
           </li>
+          <li className={s.phone_mobile}>
+            <Link href="tel:+380978542401" className={s.link_phone}>
+              <Image
+                src="/icons/phone.svg"
+                alt="Телефон"
+                width={16}
+                height={16}
+                className={s.icon_phone}
+              />
+              <span>+380 97 854 24 01</span>
+            </Link>
+          </li>
           <li className={s.telegram}>
             <Link href="https://telegram.me/ra_alex_888">
               <Image src="/icons/telegram.png" alt="Телеграм" width={25} height={25} />

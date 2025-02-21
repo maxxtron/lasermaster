@@ -16,7 +16,8 @@
   flex-direction: column;
   border-radius: 8px;
   padding: 64px 48px;
-  width: 552px;
+  max-width: 552px;
+  width: 100%;
   box-shadow:
     0 1px 4px 0 rgba(12, 12, 13, 0.05),
     0 1px 24px 0 rgba(12, 12, 13, 0.1);
@@ -29,4 +30,23 @@
   cursor: pointer;
   top: 30px;
   right: 32px;
+}
+
+@media (max-width: 580px) {
+  .popup {
+    padding: 32px 24px;
+    max-width: 470px;
+  }
+}
+@media (max-width: 475px) {
+  .popup {
+    padding: 22px 14px;
+    max-width: 400px;
+  }
+}
+@media (max-width: 420px) {
+  .popup {
+    padding: 22px 14px;
+    max-width: 350px;
+  }
 }

@@ -1,6 +1,6 @@
 .burgerMenu {
   display: none;
-  @media (max-width: 800px) {
+  @media (max-width: 870px) {
     display: block;
   }
 }
@@ -16,10 +16,20 @@
   background: none;
   border: none;
   z-index: 1001;
-  position: fixed;
+  position: absolute;
   // top: 20px;
   right: 30px;
 }
+
+// .burgerButton.hidden {
+//   bottom: 20px;
+//   top: auto;
+//   padding: 10px;
+//   width: 55px; // Пример размера, измените по необходимости
+//   height: 55px; // Пример размера, измените по необходимости
+//   border-radius: 50%; // Делает кнопку круглой
+//   background-color: #e8af1d; // Пример цвета, измените по необходимости
+// }
 
 .bar {
   height: 3px;
@@ -78,7 +88,7 @@
 
 .menu.open {
   left: 0;
-  top: -15px; /* Show menu when open */
+  // top: 15px; /* Show menu when open */
 }
 
 .menu ul {
@@ -185,8 +195,19 @@
   text-decoration: none;
 }
 
+@media (max-width: 870px) {
+  .burgerButton {
+    top: 30px;
+  }
+}
+
 @media (max-width: 770px) {
   .burgerButton {
     top: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .burgerButton {
+    top: 15px;
   }
 }

@@ -3,7 +3,7 @@
   max-width: 100%;
   width: 100%;
   height: auto;
-  margin-top: 85px;
+  // margin-top: 85px;
 }
 .image_container {
   display: flex;
@@ -353,19 +353,11 @@
   .btn_telegram {
     width: 100%;
   }
-  .main {
-    margin-top: 80px;
-  }
   .info_container {
     top: 50%;
   }
   .image_container {
     min-height: 900px;
-  }
-}
-@media (max-width: 500px) {
-  .main {
-    margin-top: 69px;
   }
 }
 @media (max-width: 450px) {
