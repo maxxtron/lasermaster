@@ -43,6 +43,18 @@ const BurgerMenu = () => {
         <div className={s.adress_container}>
           <span className={s.info}>м. Київ (Борщагівка), вул. Івана Дзюби 9</span>
           <span className={s.info}>Пн-Пт: 09:00–18:00</span>
+          <div className={s.phone}>
+            <Link href="tel:+380978542401" className={s.link_phone}>
+              <Image
+                src="/icons/phone.svg"
+                alt="Телефон"
+                width={16}
+                height={16}
+                className={s.icon_phone}
+              />
+              <span>+380 97 854 24 01</span>
+            </Link>
+          </div>
         </div>
         <ul className={s.nav_list}>
           {links.map((item) => (

@@ -9,16 +9,16 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 40px;
+  padding: 9px;
   cursor: pointer;
   background: none;
   border: none;
-  padding: 0;
   z-index: 1001;
   position: fixed;
-  top: 32px;
-  right: 35px;
+  // top: 20px;
+  right: 30px;
 }
 
 .bar {
@@ -51,7 +51,7 @@
 
 .info {
   color: #e7e7e7;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.75;
   &:first-child {
@@ -107,7 +107,7 @@
 
 .nav_item {
   font-weight: 300;
-  font-size: 0.875rem;
+  font-size: 16px;
   line-height: 1.7;
   text-decoration: none;
   color: #e7e7e7;
@@ -154,8 +154,39 @@
   margin-right: 1rem;
 }
 
+.icon_phone {
+  transition: 0.1s eas-in;
+}
+
+.phone {
+  margin-top: 10px;
+  transition: 0.2s ease;
+  span {
+    margin-left: 0.5rem;
+    color: #f3f3f3;
+    font-weight: 700;
+    transition: 0.2s ease;
+  }
+  &:hover {
+    span {
+      color: #e8af1d;
+    }
+    .icon_phone {
+      // scale: 1.2;
+      filter: brightness(0) saturate(100%) invert(65%) sepia(99%) saturate(397%) hue-rotate(356deg)
+        brightness(94%) contrast(94%);
+    }
+  }
+}
+
+.link_phone {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
 @media (max-width: 770px) {
   .burgerButton {
-    top: 25px;
+    top: 20px;
   }
 }

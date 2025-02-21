@@ -338,9 +338,14 @@
     }
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 520px) {
   .button_container {
     flex-direction: column;
+  }
+  .material:last-child {
+    max-width: 450px;
+    width: 100%;
+    margin-left: 0;
   }
   .btn_call {
     margin-top: 15px;
@@ -361,5 +366,13 @@
 @media (max-width: 500px) {
   .main {
     margin-top: 69px;
+  }
+}
+@media (max-width: 450px) {
+  .material {
+    margin-left: 0;
+  }
+  .material_list {
+    flex-direction: column;
   }
 }
