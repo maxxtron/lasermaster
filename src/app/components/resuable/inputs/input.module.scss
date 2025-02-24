@@ -14,3 +14,19 @@
     outline: none;
   }
 }
+
+@media (max-width: 580px) {
+  .input {
+    width: 420px;
+  }
+}
+@media (max-width: 475px) {
+  .input {
+    width: 350px;
+  }
+}
+@media (max-width: 420px) {
+  .input {
+    width: 300px;
+  }
+}

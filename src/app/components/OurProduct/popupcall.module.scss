@@ -96,3 +96,20 @@
 .checked_container {
   display: flex;
 }
+
+@media (max-width: 577px) {
+  .title {
+    font-size: 25px;
+  }
+}
+@media (max-width: 420px) {
+  .title {
+    font-size: 20px;
+  }
+  .phone_btn_active {
+    max-width: 350px;
+  }
+  .phone_btn_disabled {
+    max-width: 350px;
+  }
+}
