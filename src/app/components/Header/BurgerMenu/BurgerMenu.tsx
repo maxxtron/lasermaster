@@ -10,7 +10,7 @@ interface INav {
 }
 
 const links: INav[] = [
-  { id: 1, name: 'Наші роботи', link: '#' },
+  { id: 1, name: 'Наші роботи', link: '#ourworks' },
   { id: 2, name: 'Обладнання', link: '#' },
   { id: 3, name: 'Прайс', link: '#' },
   { id: 4, name: 'Про компанію', link: '#' },
