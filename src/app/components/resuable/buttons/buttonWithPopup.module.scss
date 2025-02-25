@@ -28,4 +28,7 @@
     left: 50%;
     transform: translate(-52%, -50%);
   }
+  &:hover {
+    scale: 1.1;
+  }
 }
