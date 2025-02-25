@@ -1,0 +1,43 @@
+.scrollToTopButton {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #61c14c;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  transition:
+    opacity 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+  opacity: 0;
+  transform: translateY(100px);
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-image: url('/icons/arrow-up-svgrepo-com.svg'); // Путь к изображению
+    background-size: cover;
+    background-position: center;
+    top: 49%;
+    left: 51%;
+    transform: translate(-52%, -50%);
+  }
+  cursor: pointer;
+  border: none;
+  z-index: 1001;
+  transition: 0.3s ease;
+  font-size: 24px;
+  &:hover {
+    scale: 1.1;
+  }
+}
+.scrollToTopButton.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
