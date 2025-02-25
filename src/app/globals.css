@@ -13,3 +13,6 @@ html {
 body {
   background-color: #fdfdfd;
 }
+.container {
+  position: relative;
+}

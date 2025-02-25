@@ -1,0 +1,31 @@
+.roundButton {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #1c274c;
+  border-radius: 50%;
+  background-color: #e8af1d;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  cursor: pointer;
+  border: none;
+  z-index: 1001;
+  transition: 0.3s ease;
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-image: url('/icons/phonebtn.svg'); // Путь к изображению
+    background-size: cover;
+    background-position: center;
+    top: 53%;
+    left: 50%;
+    transform: translate(-52%, -50%);
+  }
+}
