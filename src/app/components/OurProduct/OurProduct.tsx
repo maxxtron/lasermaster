@@ -2,9 +2,9 @@ import Link from 'next/link';
 import Button from '../resuable/buttons/Button';
 import s from './ourproduct.module.scss';
 import Image from 'next/image';
-import Popup from '../resuable/popup/Popup';
+import Popup from '../resuable/popups/Popup';
 import { useState } from 'react';
-import PopupCall from './PopupCall';
+import PopupCall from '../resuable/popups/PopupCall';
 interface IMaterials {
   id: number;
   icon: string;
@@ -113,7 +113,7 @@ const OurProduct = () => {
         <div className={s.contact_container}>{/* <h2>Контакти</h2> */}</div>
       </div>
       <Popup isOpen={isOpen} onClose={() => setIsOpen(false)}>
-        <PopupCall onClose={() => setIsOpen(false)} />
+        <PopupCall onClose={() => setIsOpen(false)} isOpen={isOpen}/>
       </Popup>
     </section>
   );

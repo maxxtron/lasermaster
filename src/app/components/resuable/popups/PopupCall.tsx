@@ -1,17 +1,20 @@
 import { useEffect, useState } from 'react';
 import s from './popupcall.module.scss';
-import Input from '../resuable/inputs/Input';
-import Button from '../resuable/buttons/Button';
+import Input from '../inputs/Input';
+import Button from '../buttons/Button';
 import Link from 'next/link';
+import PopupSuccess from './PopupSuccess';
+import Popup from './Popup';
 
 interface IClose {
   onClose: () => void;
+  isOpen: boolean;
 }
-
-const PopupCall = ({ onClose }: IClose) => {
+const PopupCall = ({ onClose, isOpen }: IClose) => {
   const [number, setNumber] = useState<string>('+380');
   const [isDisabled, setDisabled] = useState<boolean>(false);
   const [isChecked, setIsChecked] = useState<boolean>(false);
+  const [isSendSuccess, setIsSendSuccess] = useState<boolean>(false);
 
   useEffect(() => {
     if (number.length !== 13 || isChecked === false) {
@@ -23,7 +26,7 @@ const PopupCall = ({ onClose }: IClose) => {
   // Асинхронная функция для отправки данных
   const sendPhone = async (phone: string) => {
     try {
-      const response = await fetch('https://api.lasermaster.com.ua/lead/send', {
+      const response = await fetch('https://api.lasermaster.com.ua/lead/send1', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -57,7 +60,7 @@ const PopupCall = ({ onClose }: IClose) => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     await sendPhone(number);
-    onClose();
+    setIsSendSuccess(true);
   };
 
   return (
@@ -99,6 +102,9 @@ const PopupCall = ({ onClose }: IClose) => {
           type="submit"
         />
       </form>
+      <Popup isOpen={isSendSuccess} onClose={onClose}>
+        <PopupSuccess onClose={onClose} />
+      </Popup>
     </div>
   );
 };

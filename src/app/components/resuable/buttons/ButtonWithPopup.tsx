@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import s from './buttonWithPopup.module.scss';
-import Popup from '../popup/Popup';
-import PopupCall from '../../OurProduct/PopupCall';
+import Popup from '../popups/Popup';
+import PopupCall from '../popups/PopupCall';
 
 const ButtonWithPopup = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
