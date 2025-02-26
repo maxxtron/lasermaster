@@ -3,7 +3,7 @@ import s from './buttonWithPopup.module.scss';
 import Popup from '../popups/Popup';
 import PopupCall from '../popups/PopupCall';
 
-const ButtonWithPopup = () => {
+const ButtonWithPopup: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const togglePopup = () => {

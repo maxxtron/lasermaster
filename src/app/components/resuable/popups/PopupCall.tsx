@@ -8,9 +8,9 @@ import Popup from './Popup';
 
 interface IClose {
   onClose: () => void;
-  isOpen: boolean;
+  isOpen?: boolean;
 }
-const PopupCall = ({ onClose }: IClose) => {
+const PopupCall: React.FC<IClose> = ({ onClose }: IClose) => {
   const [number, setNumber] = useState<string>('+380');
   const [isDisabled, setDisabled] = useState<boolean>(false);
   const [isChecked, setIsChecked] = useState<boolean>(false);
