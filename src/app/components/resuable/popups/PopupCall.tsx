@@ -10,7 +10,7 @@ interface IClose {
   onClose: () => void;
   isOpen: boolean;
 }
-const PopupCall = ({ onClose, isOpen }: IClose) => {
+const PopupCall = ({ onClose }: IClose) => {
   const [number, setNumber] = useState<string>('+380');
   const [isDisabled, setDisabled] = useState<boolean>(false);
   const [isChecked, setIsChecked] = useState<boolean>(false);
@@ -26,7 +26,7 @@ const PopupCall = ({ onClose, isOpen }: IClose) => {
   // Асинхронная функция для отправки данных
   const sendPhone = async (phone: string) => {
     try {
-      const response = await fetch('https://api.lasermaster.com.ua/lead/send1', {
+      const response = await fetch('https://api.lasermaster.com.ua/lead/send', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
