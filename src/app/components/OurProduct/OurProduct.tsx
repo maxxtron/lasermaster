@@ -83,7 +83,7 @@ const OurProduct = () => {
             <h2>Власне виробництво</h2>
           </div>
           <h1 className={s.title_1}>
-            <span>Лазерне різання</span> листових металів <br /> 0,5 - 20 мм <span>та гнуття</span>
+            <span>Лазерне різання</span> листових металів <br /> 0,5 - 20 мм
           </h1>
           <ul className={s.material_list}>
             {materials.map((material) => (
