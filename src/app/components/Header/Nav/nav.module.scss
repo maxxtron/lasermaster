@@ -66,6 +66,7 @@
 .telegram {
   margin-left: 46px;
   transition: 0.2s ease;
+  display: none;
   &:hover {
     scale: 1.1;
   }
