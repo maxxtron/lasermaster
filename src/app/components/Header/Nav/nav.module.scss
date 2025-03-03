@@ -37,18 +37,12 @@
   transition: 0.2s ease;
   span {
     margin-left: 8px;
-    color: #f3f3f3;
+    color: #e8af1d;
     font-weight: 700;
     transition: 0.2s ease;
-  }
-  &:hover {
-    span {
-      color: #e8af1d;
-    }
-    .icon_phone {
-      // scale: 1.2;
-      filter: brightness(0) saturate(100%) invert(65%) sepia(99%) saturate(397%) hue-rotate(356deg)
-        brightness(94%) contrast(94%);
+    border-bottom: 1px solid transparent;
+    &:hover {
+      transform: scale(1.1);
     }
   }
 }
