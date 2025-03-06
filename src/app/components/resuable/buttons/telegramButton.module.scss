@@ -41,11 +41,11 @@
   cursor: pointer;
   border: none;
   z-index: 1001;
-  transition:
-    opacity 0.3s ease-in-out,
-    transform 0.3s ease-in-out;
-  opacity: 0;
-  transform: translateY(100px);
+  //   transition:
+  //     opacity 0.3s ease-in-out,
+  //     transform 0.3s ease-in-out;
+  //   opacity: 0;
+  //   transform: translateY(100px);
   &:hover {
     scale: (1.1);
   }
@@ -60,7 +60,7 @@
   }
 }
 
-.telegramButton.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
+// .telegramButton.visible {
+//   opacity: 1;
+//   transform: translateY(0);
+// }
