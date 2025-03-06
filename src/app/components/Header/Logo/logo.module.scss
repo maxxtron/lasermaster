@@ -1,17 +1,17 @@
 @media (max-width: 401px) {
   .logo {
-    display: none;
-  }
-  .logo_small {
     display: block;
   }
+  // .logo_small {
+  //   display: block;
+  // }
 }
 
 @media (min-width: 402px) {
   .logo {
     display: block;
   }
-  .logo_small {
-    display: none;
-  }
+  // .logo_small {
+  //   display: none;
+  // }
 }
