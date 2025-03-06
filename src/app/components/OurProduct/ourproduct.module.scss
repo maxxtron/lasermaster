@@ -145,7 +145,7 @@
 @media screen and (max-width: 1650px) {
   .info_container {
     position: absolute;
-    top: 37%;
+    top: 32%;
     left: 15%;
   }
   .icon_product {
@@ -339,6 +339,21 @@
   }
 }
 @media (max-width: 520px) {
+  .title_2 {
+    h2 {
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+
+  .title_1 {
+    font-size: 42px;
+    font-weight: 700;
+    span {
+      font-size: 42px;
+      color: #e8af1d;
+    }
+  }
   .button_container {
     flex-direction: column;
   }
@@ -354,7 +369,7 @@
     width: 100%;
   }
   .info_container {
-    top: 50%;
+    top: 38%;
   }
   .image_container {
     min-height: 900px;
@@ -366,5 +381,24 @@
   }
   .material_list {
     flex-direction: column;
+  }
+  .title_2 {
+    h2 {
+      font-size: 12px;
+      font-weight: 600;
+    }
+  }
+
+  .title_1 {
+    font-size: 38px;
+    font-weight: 700;
+    span {
+      font-size: 38px;
+      color: #e8af1d;
+    }
+  }
+
+  .material_text {
+    font-size: 16px;
   }
 }
