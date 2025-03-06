@@ -99,7 +99,7 @@ const OurProduct = () => {
               </li>
             ))}
           </ul>
-          <div className={s.button_container}>
+          <div className={s.button_container} id="button_telegram">
             <Link href="https://telegram.me/ra_alex_888" className={s.button_link} target="_blank">
               <Button value="Написати в Telegram" className={s.btn_telegram} />
             </Link>
@@ -113,7 +113,7 @@ const OurProduct = () => {
         <div className={s.contact_container}>{/* <h2>Контакти</h2> */}</div>
       </div>
       <Popup isOpen={isOpen} onClose={() => setIsOpen(false)}>
-        <PopupCall onClose={() => setIsOpen(false)} isOpen={isOpen}/>
+        <PopupCall onClose={() => setIsOpen(false)} isOpen={isOpen} />
       </Popup>
     </section>
   );
