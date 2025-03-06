@@ -5,6 +5,7 @@ import OurProduct from './components/OurProduct/OurProduct';
 import OurWorks from './components/OurWorks/OurWorks';
 import ButtonWithPopup from './components/resuable/buttons/ButtonWithPopup';
 import ScrollToTopButton from './components/resuable/buttons/ScrollToTopButton';
+import TelegramButton from './components/resuable/buttons/TelegramButton';
 import './globals.css';
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Footer />
       <ButtonWithPopup />
       <ScrollToTopButton />
+      <TelegramButton />
     </div>
   );
 }

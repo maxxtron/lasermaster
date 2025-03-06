@@ -1,11 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import s from './buttonWithPopup.module.scss';
-import Popup from '../popups/Popup';
-import PopupCall from '../popups/PopupCall';
+import React, { useEffect, useState } from 'react';
+import s from './telegramButton.module.scss';
 
 const ButtonWithPopup: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
-
   const [isHeaderVisible, setIsHeaderVisible] = useState(true);
 
   useEffect(() => {
@@ -29,10 +26,16 @@ const ButtonWithPopup: React.FC = () => {
 
   return (
     <>
-      <button className={`${s.roundButton} ${!isHeaderVisible ? s.visible : ''}`} onClick={togglePopup} />
-      <Popup isOpen={isOpen} onClose={() => setIsOpen(false)}>
-        <PopupCall onClose={() => setIsOpen(false)} />
-      </Popup>
+      <button
+        className={`${s.telegramButton} ${!isHeaderVisible ? s.visible : ''}`}
+        onClick={togglePopup}
+      />
+      <a
+        href="https://telegram.me/ra_alex_888"
+        target="_blank"
+        rel="noopener noreferrer"
+        // className={!isHeaderVisible ? s.telegramButton : ''}
+      />
     </>
   );
 };
