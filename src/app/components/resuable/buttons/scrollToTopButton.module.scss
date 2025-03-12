@@ -2,7 +2,9 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: #61c14c;
+  // background-color: #61c14c;
+  // border: 1px solid white;
+  background-color: rgba(97, 193, 76, 0.7);
   color: white;
   display: flex;
   align-items: center;
@@ -38,6 +40,7 @@
   }
 }
 .scrollToTopButton.visible {
+  border: 1px solid white;
   opacity: 1;
   transform: translateY(0);
 }
