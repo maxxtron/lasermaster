@@ -53,8 +53,10 @@ const Nav = () => {
     <nav className={s.container}>
       <div className={s.up_level}>
         <ul className={s.list}>
-          <li className={s.info}>м. Київ (Борщагівка), вул. Івана Дзюби 9</li>
-          <li className={s.info}>Пн-Пт: 09:00–18:00</li>
+          <div className={s.list_container}>
+            <li className={s.info}>м. Київ (Борщагівка), вул. Івана Дзюби 9</li>
+            <li className={s.info}>Пн-Пт: 09:00–18:00</li>
+          </div>
           <li className={s.phone}>
             <Link href="tel:+380978542401" className={s.link_phone}>
               <span>+380 97 854 24 01</span>
