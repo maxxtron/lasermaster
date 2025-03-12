@@ -48,11 +48,12 @@
 }
 .phone_mobile {
   display: none;
-  filter: brightness(0) saturate(100%) invert(55%) sepia(100%) saturate(338%) hue-rotate(6deg)
-    brightness(103%) contrast(104%);
+  // filter: brightness(0) saturate(100%) invert(55%) sepia(100%) saturate(338%) hue-rotate(6deg)
+  //   brightness(103%) contrast(104%);
   // background-color: #e8af1d;
-  // padding: 10px;
-  // border-radius: 50%;
+  padding: 10px;
+  border: 1px solid #e8af1d;
+  border-radius: 10px;
   margin-left: 25px;
 }
 
