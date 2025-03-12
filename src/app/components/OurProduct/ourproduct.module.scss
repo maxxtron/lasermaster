@@ -426,9 +426,17 @@
   .title_1 {
     font-size: 34px;
     font-weight: 700;
+    margin-top: 16px;
     span {
       font-size: 34px;
       color: #e8af1d;
     }
+  }
+
+  .material_list {
+    margin-top: 20px;
+  }
+  .material {
+    margin-bottom: 10px;
   }
 }
