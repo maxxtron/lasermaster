@@ -19,6 +19,10 @@
   gap: 40px;
 }
 
+.list_container {
+  display: flex;
+}
+
 .info {
   color: #e7e7e7;
   font-size: 14px;
@@ -141,8 +145,11 @@
   .info {
     font-size: 14px;
     &:first-child {
-      margin-right: 0;
+      margin-right: 10px;
     }
+  }
+  .nav_list {
+    gap: 10px;
   }
 }
 @media (max-width: 930px) {
@@ -157,6 +164,10 @@
 }
 
 @media (max-width: 870px) {
+  .phone {
+    position: absolute;
+    right: 100px;
+  }
   .nav_list {
     display: none;
   }
@@ -198,6 +209,8 @@
     display: none;
   }
   .phone_mobile {
+    position: absolute;
+    right: 100px;
     display: block;
     span {
       display: none;
