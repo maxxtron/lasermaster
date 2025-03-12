@@ -39,6 +39,7 @@
   justify-content: space-between;
   width: 100%;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .items_title {
@@ -60,17 +61,18 @@
   padding: 0 16px 24px;
   border-radius: 4px;
   box-shadow: 0 1px 4px 0 rgba(12, 12, 13, 0.05);
-  width: calc(33.333% - 32px);
+  max-width: 283px;
+  width: 100%;
+  align-items: center;
   margin-bottom: 32px;
   background-color: white;
 }
 
 @media (max-width: 992px) {
   .item_container {
-    width: calc(50% - 32px);
     justify-content: center;
   }
-  .works_container {
+  .works_container:last-child {
     justify-content: center;
   }
 }

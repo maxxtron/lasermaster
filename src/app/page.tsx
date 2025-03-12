@@ -1,4 +1,5 @@
 'use client';
+import Contacts from './components/Contacts/Contacts';
 import Footer from './components/footer/Footer';
 import Header from './components/Header/Header';
 import OurProduct from './components/OurProduct/OurProduct';
@@ -13,6 +14,7 @@ export default function Home() {
       <Header />
       <OurProduct />
       <OurWorks />
+      <Contacts />
       <Footer />
       <ButtonWithPopup />
       <ScrollToTopButton />
