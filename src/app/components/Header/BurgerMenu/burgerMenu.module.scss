@@ -10,7 +10,7 @@
   flex-direction: column;
   justify-content: space-around;
   width: 50px;
-  height: 45px;
+  height: 47px;
   // padding: 9px;
   cursor: pointer;
   background: none;
@@ -21,7 +21,7 @@
   // background-color: #e8af1d;
   padding: 10px;
   border: 1px solid #e8af1d;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 .bar {
@@ -194,11 +194,11 @@
 
 @media (max-width: 770px) {
   .burgerButton {
-    top: 22px;
+    top: 13px;
   }
 }
 @media (max-width: 400px) {
   .burgerButton {
-    top: 22px;
+    top: 13px;
   }
 }
