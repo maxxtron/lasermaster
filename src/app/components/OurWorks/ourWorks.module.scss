@@ -76,6 +76,9 @@
 }
 
 @media (max-width: 600px) {
+  .container {
+    margin-top: 20px;
+  }
   .items_title {
     align-self: center;
   }

@@ -7,7 +7,7 @@
 }
 .image_container {
   display: flex;
-  width: 101%;
+  width: 100%;
   min-height: 797px;
   height: 100%;
   background: url('../../../../public/img/bacn_main.jpg') no-repeat top center / contain;
@@ -369,10 +369,10 @@
     width: 100%;
   }
   .info_container {
-    top: 38%;
+    top: 50%;
   }
   .image_container {
-    min-height: 900px;
+    min-height: 600px;
   }
 }
 @media (max-width: 450px) {

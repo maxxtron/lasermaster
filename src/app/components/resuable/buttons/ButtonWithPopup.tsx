@@ -10,7 +10,7 @@ const ButtonWithPopup: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const header = document.querySelector('header');
+      const header = document.getElementById('button_telegram');
       if (header) {
         const headerRect = header.getBoundingClientRect();
         setIsHeaderVisible(headerRect.bottom > 0);
@@ -29,7 +29,10 @@ const ButtonWithPopup: React.FC = () => {
 
   return (
     <>
-      <button className={`${s.roundButton} ${!isHeaderVisible ? s.visible : ''}`} onClick={togglePopup} />
+      <button
+        className={`${s.roundButton} ${!isHeaderVisible ? s.visible : ''}`}
+        onClick={togglePopup}
+      />
       <Popup isOpen={isOpen} onClose={() => setIsOpen(false)}>
         <PopupCall onClose={() => setIsOpen(false)} />
       </Popup>
