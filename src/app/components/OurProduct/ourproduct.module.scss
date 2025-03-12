@@ -111,14 +111,14 @@
 }
 
 .btn_telegram {
-  background-color: #5fabe1;
+  background-color: rgba(95, 171, 225, 0.5);
   transition: 0.2s ease-in;
   &:hover {
     background-color: #2e8fd4;
   }
 }
 .btn_call {
-  background-color: #66c44e;
+  background-color: rgba(102, 196, 78, 0.5);
   transition: 0.2s ease-in;
   &:hover {
     background-color: #31ac35;
@@ -411,7 +411,7 @@
 
 @media (max-width: 450px) {
   .info_container {
-    top: 47%;
+    top: 49%;
   }
   .image_container {
     min-height: 600px;
@@ -440,6 +440,6 @@
     margin-bottom: 10px;
   }
   .button_container {
-    margin-top: 60px;
+    // margin-top: 60px;
   }
 }
