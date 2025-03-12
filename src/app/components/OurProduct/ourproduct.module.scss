@@ -411,9 +411,24 @@
 
 @media (max-width: 450px) {
   .info_container {
-    top: 52%;
+    top: 50%;
   }
   .image_container {
-    min-height: 750px;
+    min-height: 720px;
+  }
+  .title_2 {
+    h2 {
+      font-size: 12px;
+      font-weight: 600;
+    }
+  }
+
+  .title_1 {
+    font-size: 34px;
+    font-weight: 700;
+    span {
+      font-size: 34px;
+      color: #e8af1d;
+    }
   }
 }
