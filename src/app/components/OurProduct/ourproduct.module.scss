@@ -376,6 +376,12 @@
   }
 }
 @media (max-width: 450px) {
+  .info_container {
+    top: 48%;
+  }
+  .image_container {
+    min-height: 700px;
+  }
   .material {
     margin-left: 0;
   }
