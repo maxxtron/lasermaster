@@ -1,10 +1,10 @@
 import Link from 'next/link';
-import Button from '../resuable/buttons/Button';
+import Button from '../resuable/Buttons/Button';
 import s from './ourproduct.module.scss';
 import Image from 'next/image';
-import Popup from '../resuable/popups/Popup';
+import Popup from '../resuable/Popups/Popup';
 import { useState } from 'react';
-import PopupCall from '../resuable/popups/PopupCall';
+import PopupCall from '../resuable/Popups/PopupCall';
 interface IMaterials {
   id: number;
   icon: string;
