@@ -1,31 +1,3 @@
-// .roundTelegramButton {
-//   width: 50px;
-//   height: 50px;
-//   border-radius: 50%;
-//   //   background-color: #007bff;
-//   color: white;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   position: fixed;
-//   right: 30px;
-//   bottom: 30px;
-//   cursor: pointer;
-//   border: none;
-//   z-index: 1001;
-//   transition: 0.3s ease;
-
-//   //   &::after {
-//   //     content: '';
-//   //     display: block;
-//   //     width: 20px;
-//   //     height: 20px;
-//   //     background-image: url('/icons/phonebtn.svg'); // Путь к изображению
-//   //     background-size: cover;
-//   //     background-position: center;
-//   //   }
-// }
-
 .telegramButton {
   width: 60px;
   height: 60px;
@@ -59,12 +31,8 @@
     background-image: url('/icons/telegram.svg'); // Путь к изображению
     background-size: cover;
     background-position: center;
-    // top: 50%;
-    // left: 50%;
-    // transform: translate(-50%, -50%);
   }
 }
-
 .telegramButton.visible {
   border: 1px solid white;
   opacity: 1;
