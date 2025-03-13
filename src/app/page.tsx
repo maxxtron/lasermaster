@@ -9,6 +9,7 @@ import ButtonWithPopup from './components/resuable/Buttons/ButtonWithPopup';
 import ScrollToTopButton from './components/resuable/Buttons/ScrollToTopButton';
 import TelegramButton from './components/resuable/Buttons/TelegramButton';
 import './globals.css';
+
 export default function Home() {
   return (
     <div className="container">
