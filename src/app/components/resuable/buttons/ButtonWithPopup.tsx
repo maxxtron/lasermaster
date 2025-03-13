@@ -5,10 +5,12 @@ import PopupCall from '../Popups/PopupCall';
 
 const ButtonWithPopup: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
-
   const [isHeaderVisible, setIsHeaderVisible] = useState(true);
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
+    setIsClient(true);
+
     const handleScroll = () => {
       const header = document.getElementById('button_telegram');
       if (header) {
@@ -27,12 +29,18 @@ const ButtonWithPopup: React.FC = () => {
     setIsOpen(!isOpen);
   };
 
+  if (!isClient) {
+    return null;
+  }
+
   return (
     <>
       <button
         className={`${s.roundButton} ${!isHeaderVisible ? s.visible : ''}`}
         onClick={togglePopup}
-      />
+      >
+        {/* Кнопка */}
+      </button>
       <Popup isOpen={isOpen} onClose={() => setIsOpen(false)}>
         <PopupCall onClose={() => setIsOpen(false)} />
       </Popup>
