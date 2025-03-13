@@ -26,6 +26,8 @@
   &::after {
     content: '';
     display: block;
+    position: absolute;
+    left: 13px;
     width: 27px;
     height: 23px;
     background-image: url('/icons/telegram.svg'); // Путь к изображению
