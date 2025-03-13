@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import s from './popupcall.module.scss';
 import Input from '../Inputs/Input';
-import Button from '../Buttons/Button';
+import Button from '../buttons/Button';
 import Link from 'next/link';
 import PopupSuccess from './PopupSuccess';
 import Popup from './Popup';
