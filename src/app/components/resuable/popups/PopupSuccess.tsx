@@ -1,4 +1,4 @@
-import Button from '../buttons/Button';
+import Button from '../Buttons/Button';
 import s from './popupSuccess.module.scss';
 import Image from 'next/image';
 

@@ -39,7 +39,7 @@ const materials: IMaterials[] = [
   },
 ];
 
-const OurProduct = () => {
+const OurProduct: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
