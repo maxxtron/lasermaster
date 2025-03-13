@@ -1,18 +1,32 @@
 .map_container {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 120px;
+  flex-direction: column;
 }
 
-// @media (max-width: 700px) {
-//   .map {
-//     width: 400px;
-//     height: 400px;
-//   }
-// }
-// @media (max-width: 450px) {
-//   .map {
-//     width: 300px;
-//     height: 300px;
-//   }
-// }
+.location {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.54;
+  text-transform: uppercase;
+  text-align: center;
+  color: #e8af1d;
+  text-align: center;
+}
+
+.sub_location {
+  // max-width: 738px;
+  width: 100%;
+  margin-top: 16;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.29;
+  text-align: center;
+  color: #082d38;
+}
+
+.map {
+  margin-top: 16px;
+}
