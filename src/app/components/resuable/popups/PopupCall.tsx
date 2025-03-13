@@ -4,7 +4,7 @@ import Button from '../buttons/Button';
 import Link from 'next/link';
 import PopupSuccess from './PopupSuccess';
 import Popup from './Popup';
-import Input from '../Inputs/Input';
+import Input from '../inputs/Input';
 
 interface IClose {
   onClose: () => void;
