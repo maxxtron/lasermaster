@@ -59,7 +59,7 @@ const Nav = () => {
           </div>
           <li className={s.phone}>
             <Link href="tel:+380735084586" className={s.link_phone}>
-              <span>++38 073 508 45 86</span>
+              <span>+38 073 508 45 86</span>
             </Link>
           </li>
           <li className={s.phone_mobile}>
