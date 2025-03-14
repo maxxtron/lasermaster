@@ -43,7 +43,7 @@ const link: INav[] = [
   {
     id: 7,
     name: 'Де знаходимось ',
-    link: '#',
+    link: '#location',
   },
 ];
 const Nav = () => {
@@ -58,12 +58,12 @@ const Nav = () => {
             <li className={s.info}>Пн-Пт: 09:00–18:00</li>
           </div>
           <li className={s.phone}>
-            <Link href="tel:+380978542401" className={s.link_phone}>
-              <span>+380 97 854 24 01</span>
+            <Link href="tel:+380735084586" className={s.link_phone}>
+              <span>++38 073 508 45 86</span>
             </Link>
           </li>
           <li className={s.phone_mobile}>
-            <Link href="tel:+380978542401" className={s.link_phone}>
+            <Link href="tel:+380735084586" className={s.link_phone}>
               <Image
                 src="/icons/phone.svg"
                 alt="Телефон"
@@ -71,7 +71,7 @@ const Nav = () => {
                 height={16}
                 className={s.icon_phone}
               />
-              <span>+380 97 854 24 01</span>
+              <span>+38 073 508 45 86</span>
             </Link>
           </li>
           <li className={s.telegram}>

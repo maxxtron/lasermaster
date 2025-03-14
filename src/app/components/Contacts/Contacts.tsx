@@ -2,7 +2,7 @@ import s from './contacts.module.scss';
 
 const Contacts = () => {
   return (
-    <section className={s.map_container}>
+    <section className={s.map_container} id="location">
       <h2 className={s.location}>де знаходимось</h2>
       <h3 className={s.sub_location}>Lasermaster у Києві: завжди поруч для ваших проєктів</h3>
       <iframe
