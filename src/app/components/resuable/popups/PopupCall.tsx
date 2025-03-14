@@ -27,7 +27,7 @@ const PopupCall: React.FC<IClose> = ({ onClose }: IClose) => {
   // Асинхронная функция для отправки данных
   const sendPhone = async (phone: string) => {
     try {
-      const response = await fetch('https://api.lasermaster.com.ua/lead/send', {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/lead/send`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
