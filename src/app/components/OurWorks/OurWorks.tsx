@@ -54,12 +54,12 @@ const OurWorks = () => {
                 height={263}
                 className={s.image}
               />
-              <span className={s.item_name}>{items.name}</span>
+              {/* <span className={s.item_name}>{items.name}</span>
               {items?.description?.map((description, index) => (
                 <span className={s.item_desc} key={index}>
                   {description}
                 </span>
-              ))}
+              ))} */}
             </div>
           );
         })}
