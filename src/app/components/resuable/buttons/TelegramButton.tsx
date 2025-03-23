@@ -21,7 +21,7 @@ const TelegramButton: React.FC = () => {
 
   return (
     <Link
-      href="https://telegram.me/ra_alex_888"
+      href="+380735084586"
       target="_blank"
       className={`${s.telegramButton} ${!isVisible ? s.visible : ''}`}
     ></Link>

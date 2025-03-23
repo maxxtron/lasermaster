@@ -37,12 +37,11 @@ const OurWorks = () => {
   return (
     <section className={s.container} id="ourworks">
       <h3 className={s.ourworks_title}>Наші роботи</h3>
-      <h2 className={s.projects_title}>
-        Проєкти від Lasermaster:
-        <br /> досконалість у кожній деталі
+      <h2 className={s.projects_title}>Проєкти від Lasermaster:</h2>
+      {/* <br /> досконалість у кожній деталі
       </h2>
       <p className={s.looking_title}>Перегляньте, як ми реалізуємо ваші ідеї!</p>
-      <h4 className={s.items_title}>Лазерне різання металу</h4>
+      <h4 className={s.items_title}>Лазерне різання металу</h4> */}
       <div className={s.works_container}>
         {ourWorksLaser?.map((items) => {
           return (

@@ -100,7 +100,7 @@ const OurProduct: React.FC = () => {
             ))}
           </ul>
           <div className={s.button_container} id="button_telegram">
-            <Link href="https://telegram.me/ra_alex_888" className={s.button_link} target="_blank">
+            <Link href="https://t.me/+380735084586" className={s.button_link} target="_blank">
               <Button value="Написати в Telegram" className={s.btn_telegram} />
             </Link>
             <Button

@@ -16,7 +16,7 @@ const links: INav[] = [
   { id: 4, name: 'Про компанію', link: '#' },
   { id: 5, name: 'Схема роботи', link: '#' },
   { id: 6, name: 'Часті питання', link: '#' },
-  { id: 7, name: 'Де знаходимось', link: '#' },
+  { id: 7, name: 'Де знаходимось', link: '#location' },
 ];
 
 const BurgerMenu = () => {
@@ -74,7 +74,7 @@ const BurgerMenu = () => {
           ))}
         </ul>
         <div className={s.telegram}>
-          <Link href="https://telegram.me/ra_alex_888">
+          <Link href="https://t.me/+380735084586" target="_blank">
             <Image src="/icons/telegram.png" alt="Телеграм" width={25} height={25} />
           </Link>
         </div>
